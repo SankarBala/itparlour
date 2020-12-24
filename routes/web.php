@@ -1,11 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ServiceController;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,14 +18,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('admin.index');
+    return view('welcome');
 });
 
-Route::group(['prefix' => 'admin'], function () {
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-//    Route::get('/', function () {
-//        return view('admin.index');
-//    })->name('admin');
+
+Route::group(['prefix' => 'admin', 'middleware'=>'auth'], function () {
+
+    Route::get('/', function () {
+        return view('admin.index');
+    })->name('admin');
 
     Route::resource('/page', PageController::class);
     Route::resource('/post', PostController::class);
@@ -39,3 +43,4 @@ Route::group(['prefix' => 'admin'], function () {
 
 });
 
+require __DIR__.'/auth.php';
