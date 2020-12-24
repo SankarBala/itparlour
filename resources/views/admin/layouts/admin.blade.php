@@ -81,7 +81,12 @@
                     <i class="fas fa-expand-arrows-alt"></i>
                 </a>
             </li>
-
+            <li class="nav-item">
+                <form action="{{route('logout')}}" method="post">
+                    @csrf
+                    <button class="btn" title="Sign Out"><i class="fas fa-sign-out-alt"></i></button>
+                </form>
+            </li>
         </ul>
     </nav>
     <!-- /.navbar -->
@@ -90,7 +95,7 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
         <a href="/" class="brand-link">
-{{--            <img src="" alt="Logo" class="brand-image img-circle elevation-3"/>--}}
+            {{--            <img src="" alt="Logo" class="brand-image img-circle elevation-3"/>--}}
             <span class="brand-text font-weight-bold ml-2 text-info">{{env('app_name')}}</span>
         </a>
 
