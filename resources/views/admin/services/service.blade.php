@@ -8,9 +8,9 @@
     <script src="{{asset('/js/multiselect.min.js')}}"></script>
     <link href="{{asset('css/multiselect.css')}}" rel="stylesheet"/>
 
-    <form method="post" action="{{route('post.store')}}">
+    <form method="post" action="{{route('service.store')}}">
         <div class="row p-3">
-            <div class="col-6"><h2 class="">Create new post</h2></div>
+            <div class="col-6"><h2 class="">Create new Service</h2></div>
             <div class="col-6">
                 {{--                <a id="visit_post" class="btn btn-primary float-right disabled" href="">Visit post</a>--}}
             </div>
@@ -72,7 +72,7 @@
         </div>
         <div class="row">
             <div class="col-md-9">
-                <textarea name="contents" id="editor" hidden>{{ old('details') }}</textarea>
+                <textarea name="contents" id="editor" hidden></textarea>
             </div>
             <div class="col-md-3">
                 <h4>Select post status</h4>
@@ -92,8 +92,13 @@
                 <h4>Technology use</h4>
                 <div class="select-wrapper m-0">
                     <span class="autocomplete-select"></span>
-                    <input type="array" name="technology[]" value="" />
+                    <div id="technology_list" class="">
+{{--                        <input name="technology[]" value="html" hidden/>--}}
+{{--                        <input name="technology[]" value="css" hidden/>--}}
+{{--                        <input name="technology[]" value="javascript" hidden/>--}}
+                    </div>
                 </div>
+                <br/>
                 <h4>Featured image</h4>
                 <div id="featured_image" class="card  bg-info mb-3 featured_image d-flex justify-content-center">
                     <h5 id="select_image_req" class="text-center text-white">
@@ -145,32 +150,40 @@
                     {label: "JavaScript", value: "javascript"},
                     {label: "CSS", value: "css"},
                     {label: "SCSS", value: "scss"},
-                    {label: "Bootstrap", value: "bs"},
-                    {label: "Tailwind CSS", value: "twcss"},
+                    {label: "Bootstrap", value: "bootstrap"},
+                    {label: "Tailwind CSS", value: "tailwindcss"},
                     {label: "React", value: "jsx"},
-                    {label: "Angular", value: "ang"},
+                    {label: "Angular", value: "angular"},
                     {label: "Vue", value: "vue"},
                     {label: "jQuery", value: "jquery"},
                     {label: "PHP", value: "php"},
                     {label: "Wordpress", value: "wordpress"},
                     {label: "Laravel", value: "laravel"},
-                    {label: "Code Igniter", value: "cod_igniter"},
+                    {label: "Code Igniter", value: "code_igniter"},
                     {label: "Node.js", value: "node"},
                     {label: "Express", value: "express"},
                     {label: "Nuxt", value: "nuxt"},
                     {label: "Others", value: "others"},
                 ],
-                value: ["html", "css", "javascript"],
+                // value: ["html", "css", "javascript"],
                 multiple: true,
                 autocomplete: true,
-                icon: "fa fa-times",
+                icon: "fa fa-times mt-1",
                 onChange: value => {
-                    console.log(value);
+                    const input_wrapper = document.getElementById("technology_list");
+                    input_wrapper.innerHTML = '';
+                    for (let i = 0; i < value.length; i++) {
+                        const input = document.createElement("input");
+                        input.name = "technology[]";
+                        input.value = value[i];
+                        input.hidden = true;
+                        input_wrapper.appendChild(input);
+                    }
                 },
-
             });
 
         </script>
+
     @endpush
 
     @push('styles')
