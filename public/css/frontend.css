@@ -168,15 +168,33 @@ footer .glyphicon {
   visibility: hidden;
 }
 
+.slideanim img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.slideanim h4 {
+  margin-bottom: 10px;
+}
+
+#products .slideanim h4 {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  position: relative;
+  bottom: 100px;
+}
+
 .slide {
-  animation-name: slide;
   -webkit-animation-name: slide;
-  animation-duration: 1s;
+  animation-name: slide;
   -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   visibility: visible;
 }
 
-@keyframes slide {
+@-webkit-keyframes slide {
   0% {
     opacity: 0;
     transform: translateY(70%);
@@ -188,15 +206,15 @@ footer .glyphicon {
   }
 }
 
-@-webkit-keyframes slide {
+@keyframes slide {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(70%);
+    transform: translateY(70%);
   }
 
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
   }
 }
 
@@ -225,6 +243,11 @@ footer .glyphicon {
   line-height: 2.5;
   font-family: monospace;
   margin-left: 20px;
+  text-decoration: none;
+}
+
+.phone:hover {
+  text-decoration: none;
 }
 
 footer {

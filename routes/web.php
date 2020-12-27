@@ -1,10 +1,11 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PageController;
-use App\Http\Controllers\PortfolioController;
-use App\Http\Controllers\PostController;
-use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\Admin\PageController;
+use App\Http\Controllers\Admin\PortfolioController;
+use App\Http\Controllers\Admin\PostController;
+use App\Http\Controllers\Admin\ServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,16 +22,13 @@ Route::get('/', function () {
     return view('frontend.index');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
 
 Route::group(['prefix' => 'admin', 'middleware'=>'auth'], function () {
 
     Route::get('/', function () {
         return view('admin.index');
     })->name('admin');
+
 
     Route::resource('/page', PageController::class);
     Route::resource('/post', PostController::class);

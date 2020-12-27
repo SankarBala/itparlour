@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Theme Company Page</title>
+    <!-- Theme Made By www.w3schools.com -->
+    <title>IT PARLOUR | Your IT Assistant</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -9,11 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="{{asset('css/frontend.css')}}" rel="stylesheet" type="text/css"/>
 
 
-
-    <link href="style.css" rel="stylesheet"/>
+    <link href="{{asset('css/frontend.css')}}" rel="stylesheet"/>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -25,22 +25,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="phone" href="#"><span class="glyphicon glyphicon-phone-alt"> </span> 01742725606 </a>
+            <a class="phone" href="#"><span class="glyphicon glyphicon-phone-alt"> </span> 01747306320 </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#services">SERVICES</a></li>
+                <li><a href="#products">PRODUCTS</a></li>
                 <li><a href="#pricing">PRICING</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#contact">CONTACT</a></li>
                 <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<div class="jumbotron text-center">
+<div id="home" class="jumbotron text-center">
     <div class="container">
         <div class="row">
             <h1>IT PARLOUR</h1>
@@ -63,166 +63,76 @@
     <h2>SERVICES WE OFFER</h2>
     <br>
     <div class="row slideanim">
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-off logo-small"></span>
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
+        <div class="col-sm-3">
+            <img src="images/thumbnails/demo_057.png" alt=""/>
+            <h4>Web Design & Development</h4>
+            <p>Now a days website is parfect media to promote your business. Website represent your existance.
+                A good quality website can develop your business quickly.
+            </p>
         </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-heart logo-small"></span>
-            <h4>Web Development</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
+        <div class="col-sm-3">
+            <img src="images/thumbnails/demo_058.png" alt=""/>
+            <h4>Mobile Apps Development</h4>
+            <p>In 2020 mobile is very essential. Mobile is always at hand. So a mobile app is very effective way to be connected with your disire customer.</p>
         </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-lock logo-small"></span>
+        <div class="col-sm-3">
+            <img src="images/thumbnails/demo_059.png" alt=""/>
             <h4>Wordpress Development</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
+            <p>Wordpress is the easiest way to make a website. If you have a few buget or need to customize yourself in future you should choose wordpress.</p>
         </div>
-    </div>
-    <br>
-    <div class="row slideanim">
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-leaf logo-small"></span>
-            <h4>Search Engine Optimization</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-certificate logo-small"></span>
-            <h4>Digital Marketing</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-wrench logo-small"></span>
+        <div class="col-sm-3">
+            <img src="images/thumbnails/demo_003.png" alt=""/>
             <h4>Graphics Design</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
+            <p>Beauty is the power of duty. A nice looking design can impress anyone at a short time. So you should design your logo and others graphics awesome.</p>
         </div>
     </div>
     <br>
+
     <div class="row slideanim">
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-leaf logo-small"></span>
-            <h4>Mobile App Development</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
+        <div class="col-sm-3">
+            <img src="images/thumbnails/demo_016.png" alt=""/>
+            <h4>Digital Marketing</h4>
+            <p>Now a days most of the people are engaged to digital media like sms, email, social media, blog and many others. So be updated with marketing in digital media.</p>
         </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-certificate logo-small"></span>
+        <div class="col-sm-3">
+            <img src="images/thumbnails/demo_040.png" alt=""/>
+            <h4>Search Engine Optimization</h4>
+            <p>To get a well ranked to search engine you should analize and optimise your website or social pages. We can do optimize your site in the proper way.</p>
+        </div>
+        <div class="col-sm-3">
+            <img src="images/thumbnails/demo_011.png" alt=""/>
             <h4>Content Development</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
+            <p>Content is the main product of your digital presentation. Always make sure good quality and seo friendly content. We can help you to make these kind of content.</p>
         </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-wrench logo-small"></span>
-            <h4>Data Entry</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
+        <div class="col-sm-3">
+            <img src="images/thumbnails/demo_025.png" alt=""/>
+            <h4>Domain & Hosting</h4>
+            <p>We provide domain & hosting at a very low cost. We also manage and backup your data with high security.</p>
         </div>
     </div>
+    <br>
 </div>
 
-
 <!-- Container (Product section) -->
-<div id="services" class="container-fluid text-center">
+<div id="products" class="container-fluid text-center">
     <h2>READY MADE PRODUCT WE HAVE</h2>
     <br>
     <div class="row slideanim">
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-off logo-small"></span>
-            <h4>E-commerce & Shop Management Software</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-heart logo-small"></span>
-            <h4>School Management Software</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-lock logo-small"></span>
-            <h4>Shop Management Software</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-    </div>
-    <br>
-    <div class="row slideanim">
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-leaf logo-small"></span>
-            <h4>Hotel & Resturent Management Software</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-certificate logo-small"></span>
-            <h4>Domain</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-wrench logo-small"></span>
-            <h4>Hosting</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-    </div>
-</div>
-
-
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-    <h2>Portfolio</h2>
-    <h4>What we have created</h4>
-    <div class="row text-center slideanim">
         <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="logo.png" alt="Paris" width="50%"/>
-                <p><strong>Paris</strong></p>
-                <p>Yes, we built Paris</p>
-            </div>
+            <img src="images/thumbnails/demo_014.png" alt=""/>
+            <h4>E-commerce & POS Software</h4>
         </div>
         <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="logo.png" alt="Paris" width="50%"/>
-                <p><strong>Paris</strong></p>
-                <p>Yes, we built Paris</p>
-            </div>
+            <img src="images/thumbnails/demo_018.png" alt=""/>
+            <h4>Hotel & Resturant Software</h4>
         </div>
         <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="logo.png" alt="Paris" width="50%"/>
-                <p><strong>Paris</strong></p>
-                <p>Yes, we built Paris</p>
-            </div>
+            <img src="images/thumbnails/demo_017.png" alt=""/>
+            <h4>Blogging Website & CMS</h4>
         </div>
         <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="logo.png" alt="Paris" width="50%"/>
-                <p><strong>Paris</strong></p>
-                <p>Yes, we built Paris</p>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="row text-center slideanim">
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="logo.png" alt="Paris" width="50%"/>
-                <p><strong>Paris</strong></p>
-                <p>Yes, we built Paris</p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="logo.png" alt="Paris" width="50%"/>
-                <p><strong>Paris</strong></p>
-                <p>Yes, we built Paris</p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="logo.png" alt="Paris" width="50%"/>
-                <p><strong>Paris</strong></p>
-                <p>Yes, we built Paris</p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="logo.png" alt="Paris" width="50%"/>
-                <p><strong>Paris</strong></p>
-                <p>Yes, we built Paris</p>
-            </div>
+            <img src="images/thumbnails/demo_019.png" alt=""/>
+            <h4>Transport & Ticketing Software</h4>
         </div>
     </div>
     <br>
@@ -239,79 +149,93 @@
         <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <h1>Basic</h1>
+                    <h1>Web Development</h1>
                 </div>
                 <div class="panel-body">
-                    <p><strong>20</strong> Lorem</p>
-                    <p><strong>15</strong> Ipsum</p>
-                    <p><strong>5</strong> Dolor</p>
-                    <p><strong>2</strong> Sit</p>
-                    <p><strong>Endless</strong> Amet</p>
+                    <p><strong>Wordpress website</strong> Start from <strong>$100</strong></p>
+                    <p><strong>Custom website</strong> Start from <strong>$200</strong></p>
+                    <p><strong>Custom SPA website</strong> Start from <strong>$250</strong></p>
+                    <h4><strong>Ready Made</strong></h4>
+                    <p><strong>E-commerce & POS $300</strong></p>
+                    <p><strong>Hotel & Resturant $300</strong></p>
+                    <p><strong>Transport & Ticketing $300</strong></p>
+
                 </div>
                 <div class="panel-footer">
-                    <h3>$19</h3>
-                    <h4>per month</h4>
-                    <button class="btn btn-lg">Sign Up</button>
+                    <h4>Maintain <strong>$30</strong> Per month</h4>
+
+                    <button class="btn btn-lg">Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Digital Marketing</h1>
+                </div>
+                <div class="panel-body">
+                    <p><strong></strong> &nbsp; <strong></strong></p>
+                    <p><strong></strong> &nbsp; <strong></strong></p>
+                    <p><strong></strong> &nbsp; <strong></strong></p>
+                    <h4><strong>We need digital marketing partner</strong></h4>
+                    <p><strong></strong> &nbsp; <strong></strong></p>
+                    <p><strong></strong> &nbsp; <strong></strong></p>
+                    <p><strong></strong> &nbsp; <strong></strong></p>
+
+                </div>
+                <div class="panel-footer">
+                    <h4><strong>&nbsp;</strong></h4>
+
+                    <button class="btn btn-lg">Request partnership</button>
                 </div>
             </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <h1>Basic</h1>
+                    <h1>Domain & Hosting</h1>
                 </div>
                 <div class="panel-body">
-                    <p><strong>20</strong> Lorem</p>
-                    <p><strong>15</strong> Ipsum</p>
-                    <p><strong>5</strong> Dolor</p>
-                    <p><strong>2</strong> Sit</p>
-                    <p><strong>Endless</strong> Amet</p>
+                    <p><strong></strong> &nbsp; <strong></strong></p>
+                    <p><strong></strong> &nbsp; <strong></strong></p>
+                    <p><strong></strong> &nbsp; <strong></strong></p>
+                    <h4><strong>We need service provider</strong></h4>
+                    <p><strong></strong> &nbsp; <strong></strong></p>
+                    <p><strong></strong> &nbsp; <strong></strong></p>
+                    <p><strong></strong> &nbsp; <strong></strong></p>
+
                 </div>
                 <div class="panel-footer">
-                    <h3>$19</h3>
-                    <h4>per month</h4>
-                    <button class="btn btn-lg">Sign Up</button>
+                    <h4><strong>&nbsp;</strong></h4>
+
+                    <button class="btn btn-lg">Apply</button>
                 </div>
             </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <h1>Pro</h1>
+                    <h1>Other Services</h1>
                 </div>
                 <div class="panel-body">
-                    <p><strong>50</strong> Lorem</p>
-                    <p><strong>25</strong> Ipsum</p>
-                    <p><strong>10</strong> Dolor</p>
-                    <p><strong>5</strong> Sit</p>
-                    <p><strong>Endless</strong> Amet</p>
+                    <p><strong></strong> Graphics Designer<strong></strong></p>
+                    <p><strong></strong> Virtual Assistant <strong></strong></p>
+                    <p><strong></strong> Brand Promoter<strong></strong></p>
+                    <p><strong></strong> Content Writer <strong></strong></p>
+                    <p><strong></strong> SEO Master <strong></strong></p>
+                    <p><strong></strong> Data Entry <strong></strong></p>
+                    <p><strong></strong> Security Checker <strong></strong></p>
+
                 </div>
                 <div class="panel-footer">
-                    <h3>$29</h3>
-                    <h4>per month</h4>
-                    <button class="btn btn-lg">Sign Up</button>
+                    <h4><strong>&nbsp;</strong></h4>
+
+                    <button class="btn btn-lg">Details</button>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>Premium</h1>
-                </div>
-                <div class="panel-body">
-                    <p><strong>100</strong> Lorem</p>
-                    <p><strong>50</strong> Ipsum</p>
-                    <p><strong>25</strong> Dolor</p>
-                    <p><strong>10</strong> Sit</p>
-                    <p><strong>Endless</strong> Amet</p>
-                </div>
-                <div class="panel-footer">
-                    <h3>$49</h3>
-                    <h4>per month</h4>
-                    <button class="btn btn-lg">Sign Up</button>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
 
@@ -321,77 +245,29 @@
     <div class="row">
         <div class="col-sm-8">
             <h2>About us</h2><br>
-            <h4>
-                <mark>IT PARLOUR</mark>
-                basically a software development industry.
-            </h4>
-            <br>
-            <p> Except software development we also serve different web related and online services
-                like SEO, Facebook, Marketing, Google Marketing, Youtube Marketing, Email & SMS Marketing, Graphics
-                Design etc. </p>
-            <br>
-            <button class="btn btn-default btn-lg">Get in Touch</button>
+            <h4><mark>IT PARLOUR</mark> basically a IT Firm.</h4>
+            <p> We serve web design and development as well as different software development and mobile app
+                development, graphics design, content development, search engine Optimization, various web related and online services
+                like Facebook Marketing, Youtube Marketing, Google Marketing, Email & SMS Marketing and others digital marketing etc. </p>
+
         </div>
         <div class="col-sm-4">
-            <span class="glyphicon glyphicon-signal logo"></span>
+            <img src="images/thumbnails/demo_001.png" width="80%"/>
         </div>
     </div>
-</div>
-
-
-<!-- Container ( Section) -->
-<div id="portfolio" class="container-fluid text-center">
-    <h2>OUR TEAM</h2>
-    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span>
-                </h4>
-            </div>
-            <div class="item">
-                <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
-            </div>
-            <div class="item">
-                <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span>
-                </h4>
-            </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-
 </div>
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid">
     <h2 class="text-center">CONTACT WITH US</h2>
     <div class="row">
-        <div class="col-sm-4">
-            Google maps
-        </div>
-        <div class="col-sm-3">
+        <div class="col-sm-5">
             <p>Contact us and we'll get back to you within 24 hours.</p>
             <p><span class="glyphicon glyphicon-map-marker"></span> Madaripur-7900</p>
             <p><span class="glyphicon glyphicon-phone"></span> +8801742725606</p>
-            <p><span class="glyphicon glyphicon-envelope"></span> icare@itparlour.com</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>  icare@itparlour.com</p>
         </div>
-        <div class="col-sm-5 slideanim">
+        <div class="col-sm-7 slideanim">
             <div class="row">
                 <div class="col-sm-6 form-group">
                     <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -400,8 +276,7 @@
                     <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
                 </div>
             </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="Write your messege"
-                      rows="5"></textarea><br>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Write your messege" rows="5"></textarea><br>
             <div class="row">
                 <div class="col-sm-12 form-group">
                     <button class="btn btn-default pull-right" type="submit">Send</button>
@@ -416,7 +291,7 @@
     <p>Developed By <a href="https://github.com/sankarbala" target="_blank" title="Know about me">Sankar Bala</a></p>
 </footer>
 
-<script src="script.js"></script>
+<script src="{{asset('js/frontend.js')}}"></script>
 </body>
 </html>
 
