@@ -14,9 +14,13 @@ class CreateOptionsTable extends Migration
     public function up()
     {
         Schema::create('options', function (Blueprint $table) {
-            $table->string('name');
-            $table->string('value');
-            $table->boolean('active');
+            $table->id();
+            $table->string('name')->nullable();
+            $table->string('mobile')->nullable();
+            $table->string('email')->nullable();
+            $table->string('address')->nullable();
+            $table->string('environment')->nullable();
+            $table->boolean('debug')->default(0);
             $table->timestamps();
         });
     }

@@ -1,6 +1,8 @@
 <?php
 
 
+use App\Http\Controllers\Admin\OptionController;
+use App\Models\Option;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\PortfolioController;
@@ -19,16 +21,19 @@ use App\Http\Controllers\Admin\ServiceController;
 */
 
 Route::get('/', function () {
-    return view('frontend.index');
+    return view('frontend.index')->with('data', Option::find(1));
 });
 
 
-Route::group(['prefix' => 'admin', 'middleware'=>'auth'], function () {
+Route::group(['prefix' => 'admin'], function () {
 
     Route::get('/', function () {
         return view('admin.index');
     })->name('admin');
 
+
+
+    Route::resource('/settings', OptionController::class);
 
     Route::resource('/page', PageController::class);
     Route::resource('/post', PostController::class);

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +24,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="phone" href="#"><span class="glyphicon glyphicon-phone-alt"> </span> 01747306320 </a>
+            <a class="phone" href="#">
+                @if ($data->mobile)
+                    <span class="glyphicon glyphicon-phone-alt"></span> {{$data->mobile}}
+                @endif
+            </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
@@ -47,7 +50,7 @@
             <p>Web & Internet Technology</p>
             <form class="form-inline">
                 <div class="input-group">
-                    <input type="text" class="form-control" size="50" placeholder="What you want" required>
+                    <input type="text" class="form-control" size="50" placeholder="What you want" required/>
                     <div class="input-group-btn">
                         <button type="button" class="btn btn-info">Search</button>
                     </div>
@@ -73,17 +76,20 @@
         <div class="col-sm-3">
             <img src="images/thumbnails/demo_058.png" alt=""/>
             <h4>Mobile Apps Development</h4>
-            <p>In 2020 mobile is very essential. Mobile is always at hand. So a mobile app is very effective way to be connected with your disire customer.</p>
+            <p>In 2020 mobile is very essential. Mobile is always at hand. So a mobile app is very effective way to be
+                connected with your disire customer.</p>
         </div>
         <div class="col-sm-3">
             <img src="images/thumbnails/demo_059.png" alt=""/>
             <h4>Wordpress Development</h4>
-            <p>Wordpress is the easiest way to make a website. If you have a few buget or need to customize yourself in future you should choose wordpress.</p>
+            <p>Wordpress is the easiest way to make a website. If you have a few buget or need to customize yourself in
+                future you should choose wordpress.</p>
         </div>
         <div class="col-sm-3">
             <img src="images/thumbnails/demo_003.png" alt=""/>
             <h4>Graphics Design</h4>
-            <p>Beauty is the power of duty. A nice looking design can impress anyone at a short time. So you should design your logo and others graphics awesome.</p>
+            <p>Beauty is the power of duty. A nice looking design can impress anyone at a short time. So you should
+                design your logo and others graphics awesome.</p>
         </div>
     </div>
     <br>
@@ -92,22 +98,26 @@
         <div class="col-sm-3">
             <img src="images/thumbnails/demo_016.png" alt=""/>
             <h4>Digital Marketing</h4>
-            <p>Now a days most of the people are engaged to digital media like sms, email, social media, blog and many others. So be updated with marketing in digital media.</p>
+            <p>Now a days most of the people are engaged to digital media like sms, email, social media, blog and many
+                others. So be updated with marketing in digital media.</p>
         </div>
         <div class="col-sm-3">
             <img src="images/thumbnails/demo_040.png" alt=""/>
             <h4>Search Engine Optimization</h4>
-            <p>To get a well ranked to search engine you should analize and optimise your website or social pages. We can do optimize your site in the proper way.</p>
+            <p>To get a well ranked to search engine you should analize and optimise your website or social pages. We
+                can do optimize your site in the proper way.</p>
         </div>
         <div class="col-sm-3">
             <img src="images/thumbnails/demo_011.png" alt=""/>
             <h4>Content Development</h4>
-            <p>Content is the main product of your digital presentation. Always make sure good quality and seo friendly content. We can help you to make these kind of content.</p>
+            <p>Content is the main product of your digital presentation. Always make sure good quality and seo friendly
+                content. We can help you to make these kind of content.</p>
         </div>
         <div class="col-sm-3">
             <img src="images/thumbnails/demo_025.png" alt=""/>
             <h4>Domain & Hosting</h4>
-            <p>We provide domain & hosting at a very low cost. We also manage and backup your data with high security.</p>
+            <p>We provide domain & hosting at a very low cost. We also manage and backup your data with high
+                security.</p>
         </div>
     </div>
     <br>
@@ -245,10 +255,15 @@
     <div class="row">
         <div class="col-sm-8">
             <h2>About us</h2><br>
-            <h4><mark>IT PARLOUR</mark> basically a IT Firm.</h4>
+            <h4>
+                <mark>IT PARLOUR</mark>
+                basically a IT Firm.
+            </h4>
             <p> We serve web design and development as well as different software development and mobile app
-                development, graphics design, content development, search engine Optimization, various web related and online services
-                like Facebook Marketing, Youtube Marketing, Google Marketing, Email & SMS Marketing and others digital marketing etc. </p>
+                development, graphics design, content development, search engine Optimization, various web related and
+                online services
+                like Facebook Marketing, Youtube Marketing, Google Marketing, Email & SMS Marketing and others digital
+                marketing etc. </p>
 
         </div>
         <div class="col-sm-4">
@@ -263,9 +278,21 @@
     <div class="row">
         <div class="col-sm-5">
             <p>Contact us and we'll get back to you within 24 hours.</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span> Madaripur-7900</p>
-            <p><span class="glyphicon glyphicon-phone"></span> +8801742725606</p>
-            <p><span class="glyphicon glyphicon-envelope"></span>  icare@itparlour.com</p>
+            <p>
+                @if ($data->address)
+                    <span class="glyphicon glyphicon-map-marker"></span> {{$data->address}}
+                @endif
+            </p>
+            <p>
+                @if ($data->mobile)
+                    <span class="glyphicon glyphicon-phone"></span> {{$data->mobile}}
+                @endif
+            </p>
+            <p>
+                @if ($data->email)
+                    <span class="glyphicon glyphicon-envelope"></span> {{$data->email}}
+                @endif
+            </p>
         </div>
         <div class="col-sm-7 slideanim">
             <div class="row">
@@ -276,7 +303,8 @@
                     <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
                 </div>
             </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="Write your messege" rows="5"></textarea><br>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Write your messege"
+                      rows="5"></textarea><br>
             <div class="row">
                 <div class="col-sm-12 form-group">
                     <button class="btn btn-default pull-right" type="submit">Send</button>

@@ -159,7 +159,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class="nav-link">
+                        <a href="{{route('settings.index')}}" class="nav-link">
                             <i class="nav-icon fa fa-cog text-info"></i>
                             <p>Settings</p>
                         </a>

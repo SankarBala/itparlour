@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use App\Models\Option;
+use App\Models\Portfolio;
 use Illuminate\Http\Request;
 
-class OptionController extends Controller
+class PortfolioController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +14,7 @@ class OptionController extends Controller
      */
     public function index()
     {
-        return view('admin.settings')->with('data', Option::find(1));
+        //
     }
 
     /**
@@ -36,32 +35,16 @@ class OptionController extends Controller
      */
     public function store(Request $request)
     {
-        $data = Option::find(1);
-
-        if($data){
-            $data = Option::find(1);
-        } else {
-            $data = new Option();
-        }
-
-        $data->name = $request->name;
-        $data->mobile = $request->mobile;
-        $data->email = $request->email;
-        $data->address = $request->address;
-        $data->environment = $request->environment;
-
-        $data->save();
-
-        return redirect()->route('settings.index');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Option  $option
+     * @param  \App\Models\Portfolio  $portfolio
      * @return \Illuminate\Http\Response
      */
-    public function show(Option $option)
+    public function show(Portfolio $portfolio)
     {
         //
     }
@@ -69,10 +52,10 @@ class OptionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Option  $option
+     * @param  \App\Models\Portfolio  $portfolio
      * @return \Illuminate\Http\Response
      */
-    public function edit(Option $option)
+    public function edit(Portfolio $portfolio)
     {
         //
     }
@@ -81,21 +64,21 @@ class OptionController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Option  $option
+     * @param  \App\Models\Portfolio  $portfolio
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Option $option)
+    public function update(Request $request, Portfolio $portfolio)
     {
-      //
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Option  $option
+     * @param  \App\Models\Portfolio  $portfolio
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Option $option)
+    public function destroy(Portfolio $portfolio)
     {
         //
     }
