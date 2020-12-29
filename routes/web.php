@@ -2,6 +2,7 @@
 
 
 use App\Http\Controllers\Admin\OptionController;
+use App\Http\Controllers\MessageController;
 use App\Models\Option;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\PageController;
@@ -24,17 +25,15 @@ Route::get('/', function () {
     return view('frontend.index')->with('data', Option::find(1));
 });
 
+Route::resource('/messages', MessageController::class);
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'admin', 'middleware'=>'auth'], function () {
 
     Route::get('/', function () {
         return view('admin.index');
     })->name('admin');
 
-
-
     Route::resource('/settings', OptionController::class);
-
     Route::resource('/page', PageController::class);
     Route::resource('/post', PostController::class);
     Route::resource('/service', ServiceController::class);

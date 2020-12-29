@@ -35,7 +35,7 @@
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#products">PRODUCTS</a></li>
-                <li><a href="#pricing">PRICING</a></li>
+{{--                <li><a href="#pricing">PRICING</a></li>--}}
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
@@ -150,104 +150,104 @@
 
 
 <!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid">
-    <div class="text-center">
-        <h2>Pricing</h2>
-        <h4>Actual price depends on your product type and service quality.</h4>
-    </div>
-    <div class="row slideanim">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>Web Development</h1>
-                </div>
-                <div class="panel-body">
-                    <p><strong>Wordpress website</strong> Start from <strong>$100</strong></p>
-                    <p><strong>Custom website</strong> Start from <strong>$200</strong></p>
-                    <p><strong>Custom SPA website</strong> Start from <strong>$250</strong></p>
-                    <h4><strong>Ready Made</strong></h4>
-                    <p><strong>E-commerce & POS $300</strong></p>
-                    <p><strong>Hotel & Resturant $300</strong></p>
-                    <p><strong>Transport & Ticketing $300</strong></p>
+{{--<div id="pricing" class="container-fluid">--}}
+{{--    <div class="text-center">--}}
+{{--        <h2>Pricing</h2>--}}
+{{--        <h4>Actual price depends on your product type and service quality.</h4>--}}
+{{--    </div>--}}
+{{--    <div class="row slideanim">--}}
+{{--        <div class="col-md-3 col-sm-6 col-xs-12">--}}
+{{--            <div class="panel panel-default text-center">--}}
+{{--                <div class="panel-heading">--}}
+{{--                    <h1>Web Development</h1>--}}
+{{--                </div>--}}
+{{--                <div class="panel-body">--}}
+{{--                    <p><strong>Wordpress website</strong> Start from <strong>$100</strong></p>--}}
+{{--                    <p><strong>Custom website</strong> Start from <strong>$200</strong></p>--}}
+{{--                    <p><strong>Custom SPA website</strong> Start from <strong>$250</strong></p>--}}
+{{--                    <h4><strong>Ready Made</strong></h4>--}}
+{{--                    <p><strong>E-commerce & POS $300</strong></p>--}}
+{{--                    <p><strong>Hotel & Resturant $300</strong></p>--}}
+{{--                    <p><strong>Transport & Ticketing $300</strong></p>--}}
 
-                </div>
-                <div class="panel-footer">
-                    <h4>Maintain <strong>$30</strong> Per month</h4>
+{{--                </div>--}}
+{{--                <div class="panel-footer">--}}
+{{--                    <h4>Maintain <strong>$30</strong> Per month</h4>--}}
 
-                    <button class="btn btn-lg">Details</button>
-                </div>
-            </div>
-        </div>
+{{--                    <button class="btn btn-lg">Details</button>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>Digital Marketing</h1>
-                </div>
-                <div class="panel-body">
-                    <p><strong></strong> &nbsp; <strong></strong></p>
-                    <p><strong></strong> &nbsp; <strong></strong></p>
-                    <p><strong></strong> &nbsp; <strong></strong></p>
-                    <h4><strong>We need digital marketing partner</strong></h4>
-                    <p><strong></strong> &nbsp; <strong></strong></p>
-                    <p><strong></strong> &nbsp; <strong></strong></p>
-                    <p><strong></strong> &nbsp; <strong></strong></p>
+{{--        <div class="col-md-3 col-sm-6 col-xs-12">--}}
+{{--            <div class="panel panel-default text-center">--}}
+{{--                <div class="panel-heading">--}}
+{{--                    <h1>Digital Marketing</h1>--}}
+{{--                </div>--}}
+{{--                <div class="panel-body">--}}
+{{--                    <p><strong></strong> &nbsp; <strong></strong></p>--}}
+{{--                    <p><strong></strong> &nbsp; <strong></strong></p>--}}
+{{--                    <p><strong></strong> &nbsp; <strong></strong></p>--}}
+{{--                    <h4><strong>We need digital marketing partner</strong></h4>--}}
+{{--                    <p><strong></strong> &nbsp; <strong></strong></p>--}}
+{{--                    <p><strong></strong> &nbsp; <strong></strong></p>--}}
+{{--                    <p><strong></strong> &nbsp; <strong></strong></p>--}}
 
-                </div>
-                <div class="panel-footer">
-                    <h4><strong>&nbsp;</strong></h4>
+{{--                </div>--}}
+{{--                <div class="panel-footer">--}}
+{{--                    <h4><strong>&nbsp;</strong></h4>--}}
 
-                    <button class="btn btn-lg">Request partnership</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>Domain & Hosting</h1>
-                </div>
-                <div class="panel-body">
-                    <p><strong></strong> &nbsp; <strong></strong></p>
-                    <p><strong></strong> &nbsp; <strong></strong></p>
-                    <p><strong></strong> &nbsp; <strong></strong></p>
-                    <h4><strong>We need service provider</strong></h4>
-                    <p><strong></strong> &nbsp; <strong></strong></p>
-                    <p><strong></strong> &nbsp; <strong></strong></p>
-                    <p><strong></strong> &nbsp; <strong></strong></p>
+{{--                    <button class="btn btn-lg">Request partnership</button>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="col-md-3 col-sm-6 col-xs-12">--}}
+{{--            <div class="panel panel-default text-center">--}}
+{{--                <div class="panel-heading">--}}
+{{--                    <h1>Domain & Hosting</h1>--}}
+{{--                </div>--}}
+{{--                <div class="panel-body">--}}
+{{--                    <p><strong></strong> &nbsp; <strong></strong></p>--}}
+{{--                    <p><strong></strong> &nbsp; <strong></strong></p>--}}
+{{--                    <p><strong></strong> &nbsp; <strong></strong></p>--}}
+{{--                    <h4><strong>We need service provider</strong></h4>--}}
+{{--                    <p><strong></strong> &nbsp; <strong></strong></p>--}}
+{{--                    <p><strong></strong> &nbsp; <strong></strong></p>--}}
+{{--                    <p><strong></strong> &nbsp; <strong></strong></p>--}}
 
-                </div>
-                <div class="panel-footer">
-                    <h4><strong>&nbsp;</strong></h4>
+{{--                </div>--}}
+{{--                <div class="panel-footer">--}}
+{{--                    <h4><strong>&nbsp;</strong></h4>--}}
 
-                    <button class="btn btn-lg">Apply</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>Other Services</h1>
-                </div>
-                <div class="panel-body">
-                    <p><strong></strong> Graphics Designer<strong></strong></p>
-                    <p><strong></strong> Virtual Assistant <strong></strong></p>
-                    <p><strong></strong> Brand Promoter<strong></strong></p>
-                    <p><strong></strong> Content Writer <strong></strong></p>
-                    <p><strong></strong> SEO Master <strong></strong></p>
-                    <p><strong></strong> Data Entry <strong></strong></p>
-                    <p><strong></strong> Security Checker <strong></strong></p>
+{{--                    <button class="btn btn-lg">Apply</button>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="col-md-3 col-sm-6 col-xs-12">--}}
+{{--            <div class="panel panel-default text-center">--}}
+{{--                <div class="panel-heading">--}}
+{{--                    <h1>Other Services</h1>--}}
+{{--                </div>--}}
+{{--                <div class="panel-body">--}}
+{{--                    <p><strong></strong> Graphics Designer<strong></strong></p>--}}
+{{--                    <p><strong></strong> Virtual Assistant <strong></strong></p>--}}
+{{--                    <p><strong></strong> Brand Promoter<strong></strong></p>--}}
+{{--                    <p><strong></strong> Content Writer <strong></strong></p>--}}
+{{--                    <p><strong></strong> SEO Master <strong></strong></p>--}}
+{{--                    <p><strong></strong> Data Entry <strong></strong></p>--}}
+{{--                    <p><strong></strong> Security Checker <strong></strong></p>--}}
 
-                </div>
-                <div class="panel-footer">
-                    <h4><strong>&nbsp;</strong></h4>
+{{--                </div>--}}
+{{--                <div class="panel-footer">--}}
+{{--                    <h4><strong>&nbsp;</strong></h4>--}}
 
-                    <button class="btn btn-lg">Details</button>
-                </div>
-            </div>
-        </div>
+{{--                    <button class="btn btn-lg">Details</button>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
-    </div>
-</div>
+{{--    </div>--}}
+{{--</div>--}}
 
 
 <!-- Container (About Section) -->
@@ -303,11 +303,11 @@
                     <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
                 </div>
             </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="Write your messege"
+            <textarea class="form-control" id="message" name="message" placeholder="Write your messege"
                       rows="5"></textarea><br>
             <div class="row">
                 <div class="col-sm-12 form-group">
-                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                    <input class="btn btn-default pull-right" id="msg_submit" type="button" value="Send"/>
                 </div>
             </div>
         </div>
@@ -320,6 +320,37 @@
 </footer>
 
 <script src="{{asset('js/frontend.js')}}"></script>
+<script>
+
+    const msg_btn = document.querySelector('#msg_submit');
+
+    msg_btn.addEventListener('click', () => {
+        const msg_name = document.querySelector('#name').value;
+        const msg_email = document.querySelector('#email').value;
+        const msg_message = document.querySelector('#message').value;
+
+        axios.post('{{route('messages.store')}}', {
+            name: msg_name,
+            email: msg_email,
+            message: msg_message
+
+        }).then(data => {
+            if (data.data.data === "accepted") {
+                document.querySelector('#name').value = "";
+                document.querySelector('#email').value = "";
+                document.querySelector('#message').value = "";
+                document.querySelector('#msg_submit').value = "Saved";
+            } else {
+                console.log('failed')
+            }
+        }).catch(error => {
+            console.log(error);
+        })
+
+    });
+
+</script>
+
 </body>
 </html>
 
